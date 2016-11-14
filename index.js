@@ -10,46 +10,51 @@ function inputBlur(i){
     if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
 }
 	
+/* Round to decimal point */
+function roundToDecimal(num,dec) {
+      var rounded = (Math.round(num * Math.pow(10,dec)) / Math.pow(10,dec)).toFixed(dec);
+      return rounded;
+	  	  	  
+    }
 
-    //2. Bind a function to the click event
-    var button = document.getElementById('calculateWeight');
+
+ /*Bind a function to the click event */
+    var button = document.getElementById('calculateChange');
 
 		
-	
+/* Field and Button setup */
+
     button.onclick = function() {
-        var inputWeight = document.getElementById('inputWeight');
+        
+        /* Cost of Purchase */
+        var costOfPurchase = document.getElementById('costOfPurchase');
 
-        var weight = inputWeight.value;
+        var cost = costOfPurchase.value;
 
-        var selectElement = document.getElementById('selectPlanet');
+        /* Amount given by customer */
+		var amountTendered = document.getElementById('amountTendered');
+
+        var amount = amountTendered.value;
 
         
-var selectedIndex = selectElement.selectedIndex;
+/* Initial Change Calculation */
 
-        var selectedOption = selectElement.options[selectedIndex];
-
-        var planetName = selectedOption.text;
-        var planetValue = selectedOption.value;
+		var change = amount - cost;
 
 
-		
-						
+/*var calculateChange = document.getElementById('calculateChange'); */
 
-	
+
+
+/* Calculations to divide change into Dollars, Quarters, Nickels, Dimes, Pennies */
 
 	
-	
+
+ /* Assign the message to the output element we just fetched from the DOM */
         
-		var output = document.getElementById('output');
-	
-
-        // Assign the message to the output element we just fetched from the DOM
-        output.innerHTML = message;
 		document.getElementById('calculateChange');
 		
-		
-
-        
+		       
 		
 		
     }

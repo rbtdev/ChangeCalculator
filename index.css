@@ -7,8 +7,8 @@
   } */
 
   body {
-  	background: url('./images/universe1.jpg') no-repeat center center fixed;
-  	background-size: cover;
+  	/*background: url('./images/universe1.jpg') no-repeat center center fixed; */
+  	/*background-size: cover; */
   }
 
   .title {
@@ -19,20 +19,13 @@
 
   }
 
-  #inputWeight {
-  	background-color: orange;
-  }
-
+ 
   .CenterItems {
   	text-align: center;
   }
 
  /* Should PhotoShop the images so they all are the same size as output */
-  .PlanetImage img {
-  	border-radius: 5px;
-  	width: 200px;
-
-  }
+ 
 
   #resultText {
   	border-radius: 5px;
@@ -45,4 +38,3 @@
   }
 
   #output {color:yellow;}
-  #lbsToKg{color:white;}

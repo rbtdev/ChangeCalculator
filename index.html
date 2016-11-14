@@ -5,7 +5,9 @@
     <title>Change Calculator!</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <meta charset="UTF-8">
+
 <body>
     
     <div class = "title">
@@ -18,23 +20,39 @@
 
      <input id="amountTendered"input type="number" placeholder="Amount Tendered" title="Amount Tendered" style="color:#888;" 
     value="Amount Tendered" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
-
 	   
 	 <button id="calculateChange">Calculate Change</button>
 		
 	</div>
 
+    <!-- Output fields after calculation -->
+   
 
-    <div id='resultText'>
-    <p id="output"></p>
-
-	<p id="dollars"></p>
-	<p id="quarters"></p>
-	<p id="dimes"></p>
-	<p id="nickels"></p>
-	<p id="pennies"></p>
-	</div>
+   <div class = "change">
+    Your Change In:
+    </div> <br>
 	
+	<div class ="dollars">
+	Dollars:
+	</div> <br>
+
+    <div class ="quarters">
+	Quarters:
+	</div> <br>
+
+	<div class ="dimes">
+	Dimes:
+	</div> <br>
+
+	<div class ="nickels">
+	Nickels:
+	</div> <br>
+
+	<div class ="pennies">
+	Pennies:
+	</div> <br>
+
+
 	
     <script src="index.js"></script>
 	
