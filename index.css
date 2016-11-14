@@ -1,0 +1,48 @@
+/*html { 
+  background: url(universe1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  } */
+
+  body {
+  	background: url('./images/universe1.jpg') no-repeat center center fixed;
+  	background-size: cover;
+  }
+
+  .title {
+  	margin: auto;
+  	text-align: center;
+  	font-size: 50px;
+  	color: black;
+
+  }
+
+  #inputWeight {
+  	background-color: orange;
+  }
+
+  .CenterItems {
+  	text-align: center;
+  }
+
+ /* Should PhotoShop the images so they all are the same size as output */
+  .PlanetImage img {
+  	border-radius: 5px;
+  	width: 200px;
+
+  }
+
+  #resultText {
+  	border-radius: 5px;
+  	background-color: #ab1515;
+  	font-family: "Comic sans MS", Georgia, Serif;
+  	position: fixed;
+  	margin: 30px;
+  	top: 100px;
+  	left: 0px;
+  }
+
+  #output {color:yellow;}
+  #lbsToKg{color:white;}
