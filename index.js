@@ -18,6 +18,7 @@ function roundToDecimal(num,dec) {
     }
 
 
+
  /*Bind a function to the click event */
     var button = document.getElementById('calculateChange');
 
@@ -38,15 +39,56 @@ function roundToDecimal(num,dec) {
 
         
 /* Initial Change Calculation */
-
-		var change = amount - cost;
+        
+		var change = roundToDecimal(amount - cost, 2);
+		/* console.log(change); */
+		 document.getElementById('totalOutput').innerHTML = 'Your Change Is: $' + (change);
+		console.log(change);
+		
 
 
 /*var calculateChange = document.getElementById('calculateChange'); */
 
 
+/* DOLLARS WHOLE VALUE*/
+document.getElementById('dollars').innerHTML = 'Dollars: $' + Math.floor(change);
 
-/* Calculations to divide change into Dollars, Quarters, Nickels, Dimes, Pennies */
+var dollars = Math.floor(change);
+console.log(dollars);
+
+/* Quarters Calculations */
+
+var quarters = (Math.floor((change - dollars) / .25));
+console.log(quarters);
+document.getElementById('quarters').innerHTML = 'Quarters: ' + quarters;
+
+/* Dime Calculations */
+
+
+
+
+/*Whole value - Rounded Value  
+var wholeChangeValue = (change - Math.floor(change) );
+console.log(wholeChangeValue);
+
+var quarters = (Math.round(wholeChangeValue / .25));
+console.log(quarters);
+
+document.getElementById('quarters').innerHTML = 'Quarters: ' + quarters;
+
+console.log (wholeChangeValue); */
+
+
+
+
+
+
+
+var dimes = "";
+var nickels = "";
+var pennies = "";
+
+
 
 	
 
